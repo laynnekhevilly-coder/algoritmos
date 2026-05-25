@@ -1,0 +1,26 @@
+algoritmo "Aluno"
+
+var
+  Nota1, Nota2, Nota3, Nota4, media: real
+
+inicio
+  escreval("Qual sua nota do primeiro bimestre? ")
+  leia(Nota1)
+  escreval("Qual sua nota do segundo bimestre? ")
+  leia(Nota2)
+  escreval("Qual sua nota do terceiro bimestre? ")
+  leia(Nota3)
+  escreval("E qual sua nota do quarto bimestre?")
+  leia(Nota4)
+  media <- (Nota1 + Nota2 + Nota3 + Nota4) / 4
+  escreval("Sua média foi ", media: 4:2)
+  se (media >= 7) entao 
+    escreval("Aluno APROVADO")
+  senao
+    se (media>= 5) e (media<7) entao
+      escreval("Aluno em RECUPERAÇÃO")
+    senao
+      escreval("Aluno REPROVADO")
+  fimse
+  fimse
+fimalgoritmo

@@ -1,0 +1,15 @@
+algoritmo "ParouImpar" 
+
+var
+  N: inteiro
+
+inicio
+
+  escreva("digite um número qualquer: ")
+  leia(N)
+  se (N mod 2=0) entao 
+    escreval("o número " N " é PAR")
+  senao
+    escreval("o número " N " é ÍMPAR")
+  fimse
+fimalgoritmo
